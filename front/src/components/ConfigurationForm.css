@@ -1,0 +1,147 @@
+/* Background with gradient overlay and JPG image */
+.configuration-form-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-end-end-radius: 10%;
+    border-start-start-radius: 10%;
+    background: linear-gradient(
+        rgba(18, 18, 18, 0.7), 
+        rgba(149, 149, 149, 0.7),
+        rgba(106, 105, 105, 0.7)
+      ), 
+      url('/public/background.jpg'); /* Path to the JPG image */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+  }
+  
+  /* Form container styling */
+  .form-card {
+    width:100%;
+    max-width: 500px;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Form heading */
+  .form-heading {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #000000; /* Indigo color */
+    margin-bottom: 20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  /* Input fields */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    font-size: 16px;
+    color: #374151; /* Gray */
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #d1d5db; /* Light gray border */
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-input:focus {
+    outline: none;
+    border-color: #6366f1; /* Indigo border */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3); /* Indigo focus ring */
+  }
+  
+  /* Submit button */
+  .form-submit-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: #373737; /* Indigo */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .form-submit-btn:hover {
+    background-color: #4f46e5; /* Darker Indigo */
+  }
+  
+  .form-submit-btn:disabled {
+    background-color: #d1d5db; /* Gray when disabled */
+    cursor: not-allowed;
+  }
+  
+  /* Loader Spinner */
+  .absolute-loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loader {
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #6366f1; /* Tailwind's indigo-500 */
+    border-bottom: 4px solid #6366f1;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+  }
+  
+  /* Spin Animation */
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /* Success and error messages */
+  .success-message {
+    margin-top: 20px;
+    color: #16a34a; /* Green */
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .error-message {
+    margin-top: 20px;
+    color: #dc2626; /* Red */
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  /* Fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

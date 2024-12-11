@@ -1,0 +1,41 @@
+/* Increased height for the header */
+.header-navbar {
+    min-height: 80px; /* Adjust height */
+    background: linear-gradient(90deg, #8cd918, #4c6278); /* Gradient background */
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Nav link hover and transition */
+  .nav-item-custom {
+    font-size: 18px; /* Larger font size */
+    font-weight: 500;
+    color: #2881da !important; /* Light text */
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .nav-item-custom:hover {
+    color: #ffc107 !important; /* Bootstrap warning color */
+    transform: translateY(-2px); /* Subtle upward hover effect */
+  }
+  
+  /* Fade-in animation for header */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Adjust brand logo and text size */
+  .navbar-brand .display-6 {
+    font-size: 32px; /* Larger title font */
+  }
+  
+  .navbar-brand .me-3 {
+    font-size: 40px; /* Larger icon */
+  }
+  

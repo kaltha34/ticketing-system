@@ -1,0 +1,41 @@
+/* Footer Styling */
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff; /* Dark background */
+    color: #000000; /* Light text */
+    animation: slideInUp 1s ease-in-out; /* Footer animation */
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  .social-icon {
+    color: #e600df;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #000000; /* Bootstrap warning color */
+    transform: scale(1.2); /* Enlarge icon on hover */
+  }
+  
+  /* Footer Slide-In Animation */
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

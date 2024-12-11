@@ -1,0 +1,11 @@
+com\ticketingsystem\model\Config.class
+com\ticketingsystem\model\Ticket.class
+com\ticketingsystem\model\Log.class
+com\ticketingsystem\TicketingSystemApplication.class
+com\ticketingsystem\model\Vendor.class
+com\ticketingsystem\model\Customer.class
+com\ticketingsystem\service\TicketService.class
+com\ticketingsystem\controller\TicketController.class
+com\ticketingsystem\repository\TicketRepository.class
+com\ticketingsystem\repository\LogRepository.class
+com\ticketingsystem\service\LogService.class
